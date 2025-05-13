@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de homenagem ao Orlando e sua família">
+  <title>A História do Orlando</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    :root {
+      --primary-color: #570404;
+      --secondary-color: #450202;
+      --accent-color: #640909;
+      --text-color: #e6e6e6;
+      --highlight-color: #acacac;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: bold;
+      color: #f0f0f0;
+      border-bottom: 4px solid var(--highlight-color);
+      font-family: 'Lexend', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .biografia {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem 0;
+      background-color: var(--secondary-color);
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .biografia img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .biografia-texto {
+      flex: 1;
+      min-width: 300px;
+      max-width: 800px;
+      font-size: 1.1rem;
+    }
+
+    .biografia-texto p {
+      margin-bottom: 1rem;
+    }
+
+    .biografia-texto pre {
+      font-family: inherit;
+      white-space: pre-wrap;
+      background-color: rgba(0,0,0,0.2);
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    .galeria {
+      padding: 2rem 0;
+      background-color: var(--accent-color);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 2rem;
+      color: #f6f6f6;
+      font-family: 'Lexend', sans-serif;
+    }
+
+    .subtitulo {
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      text-align: center;
+      margin: 2rem 0 1.5rem;
+      color: #ddd;
+      font-family: 'Lexend', sans-serif;
+    }
+
+    .fotos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .foto-item {
+      background-color: #1d1b1b;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .foto-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .foto-item h3 {
+      font-family: 'Lexend', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .foto-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+    }
+
+    .foto-item p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    /* Galeria de família - fotos maiores */
+    .fotos-container.galeria-familia {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .foto-item2 img {
+      height: 250px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .biografia {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .fotos-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+      
+      .fotos-container.galeria-familia {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .fotos-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    A História do Orlando 
+  </header>
+
+  <main class="container">
+    <section class="biografia">
+      <img src="Pastor.png" alt="Foto do Orlando">
+      <div class="biografia-texto">
+        <p>Paz do Senhor! Tudo bem? Me chamo Orlando, tenho 83 anos, sou servo do Deus vivo e corinthiano de coração.</p>
+        
+        <p>Quando eu era jovem, estava passeando pela rua quando avistei Neuzinha. Ela estava rindo, com um sorriso lindo, e na hora me apaixonei. Nos apaixonamos e corri até o seu Zé e pedi a Neuzinha em casamento. Pouco tempo depois, fomos para o altar.</p>
+        
+        <p>O meu pai espiritual e grande amigo, o missionário Manoel Melo, foi quem celebrou o nosso casamento. Naquela época, não tínhamos televisão, nem dinheiro... mas tínhamos muito amor para dar.</p>
+
+        <pre>
+Desse amor nasceram os nossos filhos:
+Noemi, a primogênita;
+Karen, a disposta;
+Orlando Júnior, o sábio;
+Alexandre, o gênio;
+e Leonardo, ovelha negra — mas ainda assim, amado como todos os outros.
+        </pre>
+
+        <p>E, é claro, não poderia deixar de mencionar o meu Senhor e Salvador, Jesus Cristo, a razão do meu viver. Aquele que me encontrou quando eu estava perdido, que me achou, me desarmou completamente e me olhou com olhos cheios de amor. Foi Ele quem me sustentou nos dias maus e me chamou para a Sua obra. Enfrentei lutas, provações e dificuldades por causa do evangelho, mas mesmo assim, meu coração se alegrava, pois eu sabia que não pertenço a este mundo. Sou apenas um peregrino a caminho de casa e que aguarda com esperança e ansiedade o dia em que Ele me chamará para a Sua glória, onde poderei adorá-Lo eternamente, face a face.</p>
+        
+        <p>Vivo por Cristo, e por Cristo morrerei.</p>
+      </div>
+    </section>
+
+    <section class="galeria">
+      <h2 class="section-title">Família Querida</h2>
+
+      <div class="subtitulo">Amor da minha vida</div>
+      <div class="fotos-container">
+        <div class="foto-item">
+          <h3>Neuza Silva</h3>
+          <img src="Neuza.PNG" alt="Foto da Neuza">
+          <p>A mulher mais bela do universo, a perfeita criação de Deus. O amor da minha vida, minha companheira inseparável. Não fazemos nada um sem o outro, e só iremos nos separar quando Deus nos chamar de volta para casa, e mesmo assim, meu amor por você será eterno. Enquanto eu viver, vou te amar, cuidar de você e te proteger com todas as minhas forças. Você é o meu presente mais precioso, meu lar, meu tudo. Eu te amo, meu eterno amor.</p>
+        </div>
+      </div>
+
+      <div class="subtitulo">Filhos</div>
+      <div class="fotos-container">
+        <div class="foto-item">
+          <h3>Noemi</h3>
+          <img src="noemi.PNG" alt="Foto da Noemi">
+          <p>A minha primogênita é a minha paciente: sempre na dela, estudiosa — até mesmo após os 50 anos. Uma péssima motorista, mas dedicada a Deus e fã de filmes e séries japonesas. Te amo, filha.</p>
+        </div>
+        <div class="foto-item">
+          <h3>Karen</h3>
+          <img src="Karen.PNG" alt="Foto da Karen">
+          <p>Karen é minha cuidadora, minha serva, sempre disposta a servir sua família. Uma excelente mãe, uma excelente vó, cozinheira, arrumadeira e temente a Deus. Desde criança, sempre esteve disposta a fazer tudo o que o pai pedia, principalmente em relação às coisas da igreja — muito obediente. Te amo, filha.</p>
+        </div>
+        <div class="foto-item">
+          <h3>Junior</h3>
+          <img src="Junior.PNG" alt="Foto do Junior">
+          <p>Junior nasceu com a minha cara de imediato a Neuza colocou o nome de "Orlando Junior" meu filho é um homem de Deus, passou por muita coisa, mas Deus o sustentou e todos falam o quão libertador é conversar com ele, pois é um homem onde Deus trabalhou e ensinou. Sempre ocupado, mas nunca deixa de amar e servir aos outros. Te amo, filho</p>
+        </div>
+        <div class="foto-item">
+          <h3>Alexandre</h3>
+          <img src="Alexandre.PNG" alt="Foto do Alexandre">
+          <p>Alexandre é o meu aventureiro. Não tem medo de nada e está sempre se arriscando. Nunca me esqueço de quando, ainda jovem, tentou fazer rafting sozinho — eu tive que pular na cachoeira para salvá-lo! Ele é meu filho amado, muito inteligente, um gênio, um homem de Deus e extremamente corajoso. Tenho muito orgulho do homem que ele se tornou. Te amo, filho</p>
+        </div>
+        <div class="foto-item">
+          <h3>Leonardo</h3>
+          <img src="Leonardo.PNG" alt="Foto do Leonardo">
+          <p>Leonardo é o meu caçula. Ele é adotado — a mãe biológica dele viu a Neuza no hospital, percebeu como Deus estava prosperando a nossa família e pediu que o Leonardo fosse criado por nós. Aceitamos de coração, e seus irmãos o acolheram com amor, apesar de ser a ovelha negra da família. Ele é muito inteligente, bem-sucedido e rico. O pai te ama, filho.</p>
+        </div>
+      </div>
+
+      <div class="subtitulo">Netos</div>
+      <div class="fotos-container">
+        <div class="foto-item">
+          <h3>Vinicius</h3>
+          <img src="vinicius.PNG" alt="Foto do Vinicius">
+          <p>Vinicius o primogênito dos meus netos, nunca esqueço o dia do seu nascimento, o vô sempre ora por você e fico muito feliz como você puxou a disposição da sua mãe em todo momento querer servir as pessoas. Te amo, meu neto</p>
+        </div>
+        <div class="foto-item">
+          <h3>Gabriela</h3>
+          <img src="gabriela.PNG" alt="Foto da Gabriela">
+          <p>Gabi é minha neta linda, completamente ambiciosa e muito inteligente. Sempre soube se virar sozinha, mas sempre foi amorosa com o vô. O vô ora sempre por você. Continue estudando, trabalhando e focada, minha menina. Te amo, minha neta linda.</p>
+        </div>
+        <div class="foto-item">
+          <h3>Henrique</h3>
+          <img src="Henrique.PNG" alt="Foto do Henrique"> 
+          <p>Henrique sempre foi muito curioso. Deu um bom trabalho na escola — até repetiu de ano —, mas desde pequeno mostrava vontade de aprender de tudo, especialmente instrumentos musicais. Sempre foi um menino sossegado, e hoje é um precioso servo de Jesus na igreja, um provedor dedicado e um excelente pai. Que Deus continue te abençoando, meu neto. Eu te amo.</p>
+        </div>
+        <div class="foto-item">
+          <h3>Raphael</h3>   
+          <img src="Raphael.PNG" alt="Foto do Raphael"> 
+          <p>Raphael é o neto que puxou a feiura do pai. Mas é um homem de coração precioso: humilde, cuidador e servo de Jesus. Ama música, sempre estudou com dedicação e sabe tocar praticamente todos os instrumentos. E agora resolveu seguir os passos do irmão e quer virar programador também. O vô está só esperando você me dar um bisneto! Te amo, meu neto.</p>
+        </div>
+        <div class="foto-item">
+          <h3>Lais</h3>
+          <img src="Lais.PNG" alt="Foto da Lais">
+          <p>Laís é minha menina talentosa. Toca muito bem os instrumentos e, ainda por cima, Deus lhe concedeu um dom lindo de cantar. Uma ministra de louvor maravilhosa, que carrega uma função vinda dos céus. O vô ama ver tudo o que Deus tem feito na sua vida. Continue estudando, firme em tudo. Deus vai te prosperar muito, minha neta. Te amo.</p>
+        </div>
+        <div class="foto-item">
+          <h3>Livia</h3>
+          <img src="Livia.PNG" alt="Foto da Livia">
+          <p>Lívia é um gênio! Puxou a mãe todinha no gosto pelos estudos — sempre teve prazer em aprender. Hoje, minha neta se tornou uma enfermeira maravilhosa. Ela é linda, cuidadosa e amorosa com a família. Tenho muito orgulho de tudo o que ela conquistou, viajando pelo Brasil por causa dos estudos. Que Deus te abençoe, minha neta. Te amo!</p>
+        </div>
+        <div class="foto-item">
+          <h3>Rodrigo</h3>
+          <img src="Rodrigo.PNG" alt="Foto do Rodrigo">
+          <p>Rodrigo é um obreiro, um servo do Deus vivo. Meu galego me lembra na minha mocidade, é o mais engraçado dos netos! Muito inteligente, embora às vezes cometa umas "burrices". Mas meu neto é uma bênção, cada dia amadurecendo e se tornando um grande homem. Oro a Deus todos os dias pela vida dele, e sei que será muito sucedido em toda sua vida</p>
+        </div>
+        <div class="foto-item">
+          <h3>Victor</h3>
+          <img src="Frohlich.PNG" alt="Foto do Victor">
+          <p>Vitinho é a paixão do vô. Foi morar no Sul por causa de sua noiva que, aliás, é linda! Estou muito orgulhoso do meu neto, e ao mesmo tempo sinto muita falta dele. O vô espera com alegria poder celebrar o casamento de vocês e te ver de novo. Um rapaz inteligente, bonito, amoroso e temente a Deus. Te amo, meu neto!</p>
+        </div>
+        <div class="foto-item">
+          <h3>Gustavo</h3>
+          <img src="gustavo.PNG" alt="Foto do Gustavo">
+          <p>Gustavo puxou o pai: é super inteligente, um jovem conhecido e querido por todos. É espertinho, igual ao pai. O vô te ama muito e fica feliz quando você vem me visitar e cuida de mim. Te amo, meu neto. Você vai ser muito próspero!</p>
+        </div>
+        <div class="foto-item">
+          <h3>Julia</h3>
+          <img src="Julia" alt="Foto da Julia">
+          <p></p>
+        </div>
+        <div class="foto-item">
+          <h3>Kimberly</h3>
+          <img src="Kiki.PNG" alt="Foto da Kimberly">
+          <p>A Kimberly é a prova viva do amor de Deus na vida das pessoas. Uma menina cheia de graça, que exala ternura por onde passa. Amorosa com todos, sempre com uma palavra doce e um coração aberto. Além de linda e inteligente, é uma jovem com princípios, que sabe o valor da fé, da família e da obediência a Deus. O vô é completamente apaixonado por ela.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria">
+      <div class="subtitulo">Galeria da Família</div>
+      <div class="fotos-container galeria-familia">
+        <div class="foto-item foto-item2">
+          <h3>Mocidade dos meus filhos</h3>
+          <img src="Familia antiga.PNG" alt="Foto da família antiga">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Eu e a Neuza no nosso primeiro cruzeiro</h3>
+          <img src="Eu e neuza.PNG" alt="Foto do casal no cruzeiro">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Advinha qual dessas é a Neuza.</h3>
+          <img src="Neuzacriança.PNG" alt="Foto da Neuza criança">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Viagem em familia.</h3>
+          <img src="Viagem em familia.PNG" alt="Foto de viagem em família">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Meus meninos.</h3>
+          <img src="Meus meninos.PNG" alt="Foto dos filhos homens">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Meus 50 anos de ministério.</h3>
+          <img src="50 ANOS DE MINISTERIO.PNG" alt="Foto dos 50 anos de ministério">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Meus netos em Olimpia</h3>
+          <img src="Netos em olimpia.PNG" alt="Foto dos netos em Olimpia">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Minha princesa</h3>
+          <img src="Minha Kiki.PNG" alt="Foto da Kimberly">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Primeira visita ao estádio do Corinthians</h3>
+          <img src="Primeira visita a arena.PNG" alt="Foto na Arena Corinthians">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Eu e meu irmão</h3>
+          <img src="Eu e meu irmao.PNG" alt="Foto com irmão">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Victor sendo apresentado</h3>
+          <img src="Victor sendo apresentado.PNG" alt="Foto do Victor sendo apresentado">
+        </div>
+        <div class="foto-item foto-item2">
+          <h3>Nosso primeiro carro</h3>
+          <img src="TL.PNG" alt="Foto do primeiro carro">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
