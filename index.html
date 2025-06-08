@@ -1,116 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página de homenagem ao Orlando e sua família">
-  <title>A História do Orlando</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galeria da Família" />
+  <title>Galeria da Família</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
     :root {
       --primary-color: #570404;
-      --secondary-color: #450202;
       --accent-color: #640909;
       --text-color: #e6e6e6;
-      --highlight-color: #acacac;
     }
-    
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     body {
-      margin: 0;
-      font-family: 'Noto Sans', sans-serif;
+      font-family: 'Lexend', sans-serif;
       background-color: var(--primary-color);
       color: var(--text-color);
       line-height: 1.6;
     }
 
     header {
-      background-color: var(--secondary-color);
+      background-color: #450202;
       padding: 2rem 1rem;
       text-align: center;
       font-size: clamp(1.8rem, 4vw, 2.5rem);
       font-weight: bold;
-      color: #f0f0f0;
-      border-bottom: 4px solid var(--highlight-color);
-      font-family: 'Lexend', sans-serif;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    .biografia {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem 0;
-      background-color: var(--secondary-color);
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .biografia img {
-      max-width: 100%;
-      width: 300px;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .biografia-texto {
-      flex: 1;
-      min-width: 300px;
-      max-width: 800px;
-      font-size: 1.1rem;
-    }
-
-    .biografia-texto p {
-      margin-bottom: 1rem;
-    }
-
-    .biografia-texto pre {
-      font-family: inherit;
-      white-space: pre-wrap;
-      background-color: rgba(0,0,0,0.2);
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem 0;
-    }
-
-    .galeria {
-      padding: 2rem 0;
-      background-color: var(--accent-color);
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      margin-bottom: 2rem;
-      color: #f6f6f6;
-      font-family: 'Lexend', sans-serif;
+      border-bottom: 4px solid #acacac;
     }
 
     .subtitulo {
       font-size: clamp(1.3rem, 2.5vw, 1.8rem);
       text-align: center;
       margin: 2rem 0 1.5rem;
-      color: #ddd;
-      font-family: 'Lexend', sans-serif;
     }
 
     .fotos-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 0 1rem;
+      gap: 1.8rem;
+      padding: 0 1rem 2rem;
     }
 
     .foto-item {
@@ -126,7 +62,6 @@
     }
 
     .foto-item h3 {
-      font-family: 'Lexend', sans-serif;
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
       color: #fff;
@@ -135,39 +70,14 @@
 
     .foto-item img {
       width: 100%;
-      height: 200px;
+      height: 300px;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 0.8rem;
     }
 
-    .foto-item p {
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    /* Galeria de família - fotos maiores */
-    .fotos-container.galeria-familia {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .foto-item2 img {
-      height: 250px;
-    }
-
-    /* Responsividade */
     @media (max-width: 768px) {
-      .biografia {
-        flex-direction: column;
-        text-align: center;
-      }
-      
       .fotos-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      }
-      
-      .fotos-container.galeria-familia {
-        grid-template-columns: 1fr;
       }
     }
 
@@ -179,189 +89,467 @@
   </style>
 </head>
 <body>
-  <header>
-    A História do Orlando 
-  </header>
-
-  <main class="container">
-    <section class="biografia">
-      <img src="Pastor.png" alt="Foto do Orlando">
-      <div class="biografia-texto">
-        <p>Paz do Senhor! Tudo bem? Me chamo Orlando, tenho 83 anos, sou servo do Deus vivo e corinthiano de coração.</p>
-        
-        <p>Quando eu era jovem, estava passeando pela rua quando avistei Neuzinha. Ela estava rindo, com um sorriso lindo, e na hora me apaixonei. Nos apaixonamos e corri até o seu Zé e pedi a Neuzinha em casamento. Pouco tempo depois, fomos para o altar.</p>
-        
-        <p>O meu pai espiritual e grande amigo, o missionário Manoel Melo, foi quem celebrou o nosso casamento. Naquela época, não tínhamos televisão, nem dinheiro... mas tínhamos muito amor para dar.</p>
-
-        <pre>
-Desse amor nasceram os nossos filhos:
-Noemi, a primogênita;
-Karen, a disposta;
-Orlando Júnior, o sábio;
-Alexandre, o gênio;
-e Leonardo, ovelha negra — mas ainda assim, amado como todos os outros.
-        </pre>
-
-        <p>E, é claro, não poderia deixar de mencionar o meu Senhor e Salvador, Jesus Cristo, a razão do meu viver. Aquele que me encontrou quando eu estava perdido, que me achou, me desarmou completamente e me olhou com olhos cheios de amor. Foi Ele quem me sustentou nos dias maus e me chamou para a Sua obra. Enfrentei lutas, provações e dificuldades por causa do evangelho, mas mesmo assim, meu coração se alegrava, pois eu sabia que não pertenço a este mundo. Sou apenas um peregrino a caminho de casa e que aguarda com esperança e ansiedade o dia em que Ele me chamará para a Sua glória, onde poderei adorá-Lo eternamente, face a face.</p>
-        
-        <p>Vivo por Cristo, e por Cristo morrerei.</p>
-      </div>
-    </section>
-
-    <section class="galeria">
-      <h2 class="section-title">Família Querida</h2>
-
-      <div class="subtitulo">Amor da minha vida</div>
-      <div class="fotos-container">
-        <div class="foto-item">
-          <h3>Neuza Silva</h3>
-          <img src="Neuza.PNG" alt="Foto da Neuza">
-          <p>A mulher mais bela do universo, a perfeita criação de Deus. O amor da minha vida, minha companheira inseparável. Não fazemos nada um sem o outro, e só iremos nos separar quando Deus nos chamar de volta para casa, e mesmo assim, meu amor por você será eterno. Enquanto eu viver, vou te amar, cuidar de você e te proteger com todas as minhas forças. Você é o meu presente mais precioso, meu lar, meu tudo. Eu te amo, meu eterno amor.</p>
-        </div>
+  <header>Galeria da Família</header>
+  <section class="galeria">
+    <div class="subtitulo">Memórias e Momentos Especiais</div>
+    <div class="fotos-container">
+      
+      <div class="foto-item">
+        <h3>Aguardando no navio após incidente</h3>
+        <img src="esperando tirar o corpo do bebado navio.jpg" alt="Aguardando no navio após incidente" />
       </div>
 
-      <div class="subtitulo">Filhos</div>
-      <div class="fotos-container">
-        <div class="foto-item">
-          <h3>Noemi</h3>
-          <img src="noemi.PNG" alt="Foto da Noemi">
-          <p>A minha primogênita é a minha paciente: sempre na dela, estudiosa — até mesmo após os 50 anos. Uma péssima motorista, mas dedicada a Deus e fã de filmes e séries japonesas. Te amo, filha.</p>
-        </div>
-        <div class="foto-item">
-          <h3>Karen</h3>
-          <img src="Karen.PNG" alt="Foto da Karen">
-          <p>Karen é minha cuidadora, minha serva, sempre disposta a servir sua família. Uma excelente mãe, uma excelente vó, cozinheira, arrumadeira e temente a Deus. Desde criança, sempre esteve disposta a fazer tudo o que o pai pedia, principalmente em relação às coisas da igreja — muito obediente. Te amo, filha.</p>
-        </div>
-        <div class="foto-item">
-          <h3>Junior</h3>
-          <img src="Junior.PNG" alt="Foto do Junior">
-          <p>Junior nasceu com a minha cara de imediato a Neuza colocou o nome de "Orlando Junior" meu filho é um homem de Deus, passou por muita coisa, mas Deus o sustentou e todos falam o quão libertador é conversar com ele, pois é um homem onde Deus trabalhou e ensinou. Sempre ocupado, mas nunca deixa de amar e servir aos outros. Te amo, filho</p>
-        </div>
-        <div class="foto-item">
-          <h3>Alexandre</h3>
-          <img src="Alexandre.PNG" alt="Foto do Alexandre">
-          <p>Alexandre é o meu aventureiro. Não tem medo de nada e está sempre se arriscando. Nunca me esqueço de quando, ainda jovem, tentou fazer rafting sozinho — eu tive que pular na cachoeira para salvá-lo! Ele é meu filho amado, muito inteligente, um gênio, um homem de Deus e extremamente corajoso. Tenho muito orgulho do homem que ele se tornou. Te amo, filho</p>
-        </div>
-        <div class="foto-item">
-          <h3>Leonardo</h3>
-          <img src="Leonardo.PNG" alt="Foto do Leonardo">
-          <p>Leonardo é o meu caçula. Ele é adotado — a mãe biológica dele viu a Neuza no hospital, percebeu como Deus estava prosperando a nossa família e pediu que o Leonardo fosse criado por nós. Aceitamos de coração, e seus irmãos o acolheram com amor, apesar de ser a ovelha negra da família. Ele é muito inteligente, bem-sucedido e rico. O pai te ama, filho.</p>
-        </div>
+      <div class="foto-item">
+        <h3>Orlando e eu em Miami</h3>
+        <img src="Eu e neuza.PNG" alt="Orlando e eu em Miami" />
       </div>
 
-      <div class="subtitulo">Netos</div>
-      <div class="fotos-container">
-        <div class="foto-item">
-          <h3>Vinicius</h3>
-          <img src="vinicius.PNG" alt="Foto do Vinicius">
-          <p>Vinicius o primogênito dos meus netos, nunca esqueço o dia do seu nascimento, o vô sempre ora por você e fico muito feliz como você puxou a disposição da sua mãe em todo momento querer servir as pessoas. Te amo, meu neto</p>
-        </div>
-        <div class="foto-item">
-          <h3>Gabriela</h3>
-          <img src="gabriela.PNG" alt="Foto da Gabriela">
-          <p>Gabi é minha neta linda, completamente ambiciosa e muito inteligente. Sempre soube se virar sozinha, mas sempre foi amorosa com o vô. O vô ora sempre por você. Continue estudando, trabalhando e focada, minha menina. Te amo, minha neta linda.</p>
-        </div>
-        <div class="foto-item">
-          <h3>Henrique</h3>
-          <img src="Henrique.PNG" alt="Foto do Henrique"> 
-          <p>Henrique sempre foi muito curioso. Deu um bom trabalho na escola — até repetiu de ano —, mas desde pequeno mostrava vontade de aprender de tudo, especialmente instrumentos musicais. Sempre foi um menino sossegado, e hoje é um precioso servo de Jesus na igreja, um provedor dedicado e um excelente pai. Que Deus continue te abençoando, meu neto. Eu te amo.</p>
-        </div>
-        <div class="foto-item">
-          <h3>Raphael</h3>   
-          <img src="Raphael.PNG" alt="Foto do Raphael"> 
-          <p>Raphael é o neto que puxou a feiura do pai. Mas é um homem de coração precioso: humilde, cuidador e servo de Jesus. Ama música, sempre estudou com dedicação e sabe tocar praticamente todos os instrumentos. E agora resolveu seguir os passos do irmão e quer virar programador também. O vô está só esperando você me dar um bisneto! Te amo, meu neto.</p>
-        </div>
-        <div class="foto-item">
-          <h3>Lais</h3>
-          <img src="Lais.PNG" alt="Foto da Lais">
-          <p>Laís é minha menina talentosa. Toca muito bem os instrumentos e, ainda por cima, Deus lhe concedeu um dom lindo de cantar. Uma ministra de louvor maravilhosa, que carrega uma função vinda dos céus. O vô ama ver tudo o que Deus tem feito na sua vida. Continue estudando, firme em tudo. Deus vai te prosperar muito, minha neta. Te amo.</p>
-        </div>
-        <div class="foto-item">
-          <h3>Livia</h3>
-          <img src="Livia.PNG" alt="Foto da Livia">
-          <p>Lívia é um gênio! Puxou a mãe todinha no gosto pelos estudos — sempre teve prazer em aprender. Hoje, minha neta se tornou uma enfermeira maravilhosa. Ela é linda, cuidadosa e amorosa com a família. Tenho muito orgulho de tudo o que ela conquistou, viajando pelo Brasil por causa dos estudos. Que Deus te abençoe, minha neta. Te amo!</p>
-        </div>
-        <div class="foto-item">
-          <h3>Rodrigo</h3>
-          <img src="Rodrigo.PNG" alt="Foto do Rodrigo">
-          <p>Rodrigo é um obreiro, um servo do Deus vivo. Meu galego me lembra na minha mocidade, é o mais engraçado dos netos! Muito inteligente, embora às vezes cometa umas "burrices". Mas meu neto é uma bênção, cada dia amadurecendo e se tornando um grande homem. Oro a Deus todos os dias pela vida dele, e sei que será muito sucedido em toda sua vida</p>
-        </div>
-        <div class="foto-item">
-          <h3>Victor</h3>
-          <img src="Frohlich.PNG" alt="Foto do Victor">
-          <p>Vitinho é a paixão do vô. Foi morar no Sul por causa de sua noiva que, aliás, é linda! Estou muito orgulhoso do meu neto, e ao mesmo tempo sinto muita falta dele. O vô espera com alegria poder celebrar o casamento de vocês e te ver de novo. Um rapaz inteligente, bonito, amoroso e temente a Deus. Te amo, meu neto!</p>
-        </div>
-        <div class="foto-item">
-          <h3>Gustavo</h3>
-          <img src="gustavo.PNG" alt="Foto do Gustavo">
-          <p>Gustavo puxou o pai: é super inteligente, um jovem conhecido e querido por todos. É espertinho, igual ao pai. O vô te ama muito e fica feliz quando você vem me visitar e cuida de mim. Te amo, meu neto. Você vai ser muito próspero!</p>
-        </div>
-        <div class="foto-item">
-          <h3>Julia</h3>
-          <img src="Julia" alt="Foto da Julia">
-          <p></p>
-        </div>
-        <div class="foto-item">
-          <h3>Kimberly</h3>
-          <img src="Kiki.PNG" alt="Foto da Kimberly">
-          <p>A Kimberly é a prova viva do amor de Deus na vida das pessoas. Uma menina cheia de graça, que exala ternura por onde passa. Amorosa com todos, sempre com uma palavra doce e um coração aberto. Além de linda e inteligente, é uma jovem com princípios, que sabe o valor da fé, da família e da obediência a Deus. O vô é completamente apaixonado por ela.</p>
-        </div>
+      <div class="foto-item">
+        <h3>Beijando meu amor</h3>
+        <img src="vô e vó se pegando.jpg" alt="Beijando meu amor" />
       </div>
-    </section>
 
-    <section class="galeria">
-      <div class="subtitulo">Galeria da Família</div>
-      <div class="fotos-container galeria-familia">
-        <div class="foto-item foto-item2">
-          <h3>Mocidade dos meus filhos</h3>
-          <img src="Familia antiga.PNG" alt="Foto da família antiga">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Eu e a Neuza no nosso primeiro cruzeiro</h3>
-          <img src="Eu e neuza.PNG" alt="Foto do casal no cruzeiro">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Advinha qual dessas é a Neuza.</h3>
-          <img src="Neuzacriança.PNG" alt="Foto da Neuza criança">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Viagem em familia.</h3>
-          <img src="Viagem em familia.PNG" alt="Foto de viagem em família">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Meus meninos.</h3>
-          <img src="Meus meninos.PNG" alt="Foto dos filhos homens">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Meus 50 anos de ministério.</h3>
-          <img src="50 ANOS DE MINISTERIO.PNG" alt="Foto dos 50 anos de ministério">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Meus netos em Olimpia</h3>
-          <img src="Netos em olimpia.PNG" alt="Foto dos netos em Olimpia">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Minha princesa</h3>
-          <img src="Minha Kiki.PNG" alt="Foto da Kimberly">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Primeira visita ao estádio do Corinthians</h3>
-          <img src="Primeira visita a arena.PNG" alt="Foto na Arena Corinthians">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Eu e meu irmão</h3>
-          <img src="Eu e meu irmao.PNG" alt="Foto com irmão">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Victor sendo apresentado</h3>
-          <img src="Victor sendo apresentado.PNG" alt="Foto do Victor sendo apresentado">
-        </div>
-        <div class="foto-item foto-item2">
-          <h3>Nosso primeiro carro</h3>
-          <img src="TL.PNG" alt="Foto do primeiro carro">
-        </div>
+      <div class="foto-item">
+        <h3>Nosso casamento</h3>
+        <img src="vó assinando o documento de casamento.jpg" alt="Nosso casamento" />
       </div>
-    </section>
-  </main>
+
+      <div class="foto-item">
+        <h3>Nosso casamento</h3>
+        <img src="manoel de melo dando a benção casamento vô.jpg" alt="Nosso casamento" />
+      </div>
+
+      <div class="foto-item">
+        <h3>50 anos de ministério - música da família</h3>
+        <img src="50 anos cantando.jpg" alt="50 anos de ministério - música da família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>50 anos de ministério - música da família</h3>
+        <img src="ale rindo com kiki.jpg" alt="50 anos de ministério - música da família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>50 anos de ministério - música da família</h3>
+        <img src="50 ANOS DE MINISTERIO.PNG" alt="50 anos de ministério - música da família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>50 anos de ministério - música da família</h3>
+        <img src="raphael com microfone.jpg" alt="50 anos de ministério - música da família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>50 anos de ministério - música da família</h3>
+        <img src="vô 50 anos preto e branco.jpg" alt="50 anos de ministério - música da família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia no ônibus</h3>
+        <img src="vô moscando busao.jpg" alt="Viagem para Olímpia no ônibus" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia no ônibus</h3>
+        <img src="busao rodrigo mongo.jpg" alt="Viagem para Olímpia no ônibus" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia</h3>
+        <img src="Netos em olimpia.PNG" alt="Viagem para Olímpia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia</h3>
+        <img src="familia no thermal.jpg" alt="Viagem para Olímpia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia</h3>
+        <img src="rodrigo camisa azul.jpg" alt="Viagem para Olímpia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia</h3>
+        <img src="vó em olimpia.jpg" alt="Viagem para Olímpia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem para Olímpia</h3>
+        <img src="familia na piscina olimpia.jpg" alt="Viagem para Olímpia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando pregando na Pompeia</h3>
+        <img src="vô na pompeia.jpg" alt="Orlando pregando na Pompeia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu orando pelos pais no dia dos pais</h3>
+        <img src="Eu orando pelos pais no dias dos pais..jpg" alt="Eu orando pelos pais no dia dos pais" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Santa Ceia</h3>
+        <img src="vô pegando ceia.jpg" alt="Santa Ceia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando pregando na Jacuí</h3>
+        <img src="vô na jacui.jpg" alt="Orlando pregando na Jacuí" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando pregando</h3>
+        <img src="vô pregando sentado.jpg" alt="Orlando pregando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando pregando</h3>
+        <img src="vô jovem pregando.jpg" alt="Orlando pregando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Euzinha</h3>
+        <img src="vó com microfone.jpg" alt="Euzinha" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e meus filhos</h3>
+        <img src="filhos reunidos leo de touca.jpg" alt="Eu e meus filhos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Euzinha</h3>
+        <img src="vó de terno.jpg" alt="Euzinha" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Nosso primeiro carro</h3>
+        <img src="TL.PNG" alt="Nosso primeiro carro" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Filhos jovens</h3>
+        <img src="Familia antiga.PNG" alt="Filhos jovens" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e meus netos ajudando no gramado</h3>
+        <img src="eu, vó, rapha e livia.jpg" alt="Eu e meus netos ajudando no gramado" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Familia na pizzaria</h3>
+        <img src="pizzaria.jpg" alt="Familia na pizzaria" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo e Raphael</h3>
+        <img src="raphael e rodrigo apos aula.jpg" alt="Rodrigo e Raphael" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu mexendo no celular</h3>
+        <img src="vó no cel.jpg" alt="Eu mexendo no celular" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo abrindo culto</h3>
+        <img src="rodrigo abrindo culto.jpg" alt="Rodrigo abrindo culto" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo com braço quebrado e Raphael com braço cortado</h3>
+        <img src="rodrigo e rafael braço quebrado.jpg" alt="Rodrigo com braço quebrado e Raphael com braço cortado" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Victor sendo apresentado</h3>
+        <img src="Victor sendo apresentado.PNG" alt="Victor sendo apresentado" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Chegada ao cruzeiro</h3>
+        <img src="chegamos no cruzeiro.jpg" alt="Chegada ao cruzeiro" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo e Victor</h3>
+        <img src="vitor e rodrigo cruzeiro.jpg" alt="Rodrigo e Victor" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Familia no cruzeiro</h3>
+        <img src="embarcando para cruzeiro.jpg" alt="Familia no cruzeiro" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Euzinha</h3>
+        <img src="vó deitada com roupa jeans.jpg" alt="Euzinha" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Orlando passando frio</h3>
+        <img src="vô e vó de touca.jpg" alt="Eu e o Orlando passando frio" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Orlando dividindo a mesma cadeira</h3>
+        <img src="vô e vó com os pés na mesma cadeira.jpg" alt="Eu e o Orlando dividindo a mesma cadeira" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando na cama</h3>
+        <img src="vô na cama.jpg" alt="Orlando na cama" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Gustavo bebê</h3>
+        <img src="gu com copo.jpg" alt="Gustavo bebê" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Gabriela e Orlando</h3>
+        <img src="gabi e vô.jpg" alt="Gabriela e Orlando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Julinha</h3>
+        <img src="julia rindo.jpg" alt="Julinha" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Lais pequena</h3>
+        <img src="lais com roupa rosa.jpg" alt="Lais pequena" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Leonardo na mocidade</h3>
+        <img src="leo jovem.jpg" alt="Leonardo na mocidade" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Nascimento do Gustavo</h3>
+        <img src="nascimento do gustavo.jpg" alt="Nascimento do Gustavo" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Netos pequenos</h3>
+        <img src="netos e livia no colo.jpg" alt="Netos pequenos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Junior e os meninos</h3>
+        <img src="pai segurando eu e raphael.jpg" alt="Junior e os meninos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando com filho e neto</h3>
+        <img src="Orlando. pai e rapha.jpg" alt="Orlando com filho e neto" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Os homens reunidos</h3>
+        <img src="todos os netos na casa de baixo.jpg" alt="Os homens reunidos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Toda família na sede de são miguel</h3>
+        <img src="toda familia na sede de cima.jpg" alt="Toda família na sede de são miguel" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem em família</h3>
+        <img src="Viagem em familia.PNG" alt="Viagem em família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo fazendo barba</h3>
+        <img src="Rodrigo fazendo a barba.jpg" alt="Rodrigo fazendo barba" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Raphael e Henrique</h3>
+        <img src="raphael e henrique com po na cara.jpg" alt="Raphael e Henrique" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu criança</h3>
+        <img src="Neuzacriança.PNG" alt="Eu criança" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Netos pequenos</h3>
+        <img src="netos pequenos e eu no colo da gabi.jpg" alt="Netos pequenos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Netos pequenos</h3>
+        <img src="netos e raphael no berço.jpg" alt="Netos pequenos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Livia pequena</h3>
+        <img src="livia pequena.jpg" alt="Livia pequena" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Meus homens</h3>
+        <img src="Meus meninos.PNG" alt="Meus homens" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Meus homens</h3>
+        <img src="Leo mano no nariz.jpg" alt="Meus homens" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo neném</h3>
+        <img src="Nino nenem.jpg" alt="Rodrigo neném" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Raphael neném</h3>
+        <img src="raphael de pinto de fora.jpg" alt="Raphael neném" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Victor neném</h3>
+        <img src="victor no tronco.jpg" alt="Victor neném" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Netos pequenos</h3>
+        <img src="meus netos pequeno.jpg" alt="Netos pequenos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Nascimento Raphael</h3>
+        <img src="vô segurando raphael.jpg" alt="Nascimento Raphael" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Com meus netos na piscina</h3>
+        <img src="vó na piscina com netos.jpg" alt="Com meus netos na piscina" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Orlando</h3>
+        <img src="vó camisa vermelha rindo.jpg" alt="Eu e o Orlando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Orlando</h3>
+        <img src="despertaaaa.jpg" alt="Eu e o Orlando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Orlando</h3>
+        <img src="vô e vó bebendo.jpg" alt="Eu e o Orlando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Orlando</h3>
+        <img src="vô e vó com vinho.jpg" alt="Eu e o Orlando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>15/05/2017 - Retrato do nosso casamento</h3>
+        <img src="retrato casamento.jpg" alt="Retrato do nosso casamento" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando</h3>
+        <img src="vô lindo.jpg" alt="Orlando" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando segurando o Rodrigo</h3>
+        <img src="Vó me segurando.jpg" alt="Orlando segurando o Rodrigo" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Apresentação do Gustavo na igreja sede</h3>
+        <img src="superman.PNG" alt="Apresentação do Gustavo na igreja sede" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e o Rodrigo</h3>
+        <img src="rodrigo pagou o outback.jpg" alt="Eu e o Rodrigo" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Meu aniversário</h3>
+        <img src="aniversário da vó.jpg" alt="Meu aniversário" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Aniversário do Rodrigo</h3>
+        <img src="aniversario eu com cabelo de hitler.jpg" alt="Aniversário do Rodrigo" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Dia dos pais de 2023</h3>
+        <img src="todos os pais e filhos 2023.jpg" alt="Dia dos pais de 2023" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Casamento Cida e Toninho</h3>
+        <img src="tia cida e tio toninho.jpg" alt="Casamento Cida e Toninho" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Orlando dormindo</h3>
+        <img src="vô dormindo.jpg" alt="Orlando dormindo" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Viagem em família</h3>
+        <img src="vó e victor juntos.jpg" alt="Viagem em família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu conhecendo meus bisnetos</h3>
+        <img src="vó conhecendo os bisnetos.jpg" alt="Eu conhecendo meus bisnetos" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo e Sueli</h3>
+        <img src="rodrigo e suel.jpg" alt="Rodrigo e Sueli" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Rodrigo e Victor crianças</h3>
+        <img src="rodrigo e victor.jpg" alt="Rodrigo e Victor crianças" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Raphael com capacete</h3>
+        <img src="raphael de chapeu.jpg" alt="Raphael com capacete" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Eu e Orlando na Pompeia</h3>
+        <img src="vô chorando.jpg" alt="Eu e Orlando na Pompeia" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Festa de família</h3>
+        <img src="tio beto dando discurso.jpg" alt="Festa de família" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Noemi e filhas</h3>
+        <img src="Noemi, lais e livia 2012.jpg" alt="Noemi e filhas" />
+      </div>
+
+      <div class="foto-item">
+        <h3>Junior e Orlando na piscina</h3>
+        <img src="pai e vô na piscina.jpg" alt="Junior e Orlando na piscina" />
+      </div>
+      
+    </div>
+  </section>
 </body>
 </html>
